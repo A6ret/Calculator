@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Calculator</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" async defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="main-body">
+                <div class="row1">
+                    <div class="answer-area">0</div>
+                </div>
+                <div class="row2">
+                    <button class="num7">7</button>
+                    <button class="num8">8</button>
+                    <button class="num9">9</button>
+                    <button class="negate">+/-</button>
+                </div>
+                <div class="row3">
+                    <button class="num4">4</button>
+                    <button class="num5">5</button>
+                    <button class="num6">6</button>
+                    <button class="substraction">-</button>
+                </div>
+                <div class="row4">
+                    <button class="num1">1</button>
+                    <button class="num2">2</button>
+                    <button class="num3">3</button>
+                    <button class="addition">+</button>
+                </div>
+                <div class="row5">
+                    <button class="clear">CE</button>
+                    <button class="num0">0</button>
+                    <button class="result">=</button>
+                </div>
+            </div>
+
+            <div class="history">
+                <div class="head">
+                    <h3>History</h3>
+                    <button class="clearHistory-btn">Clear</button>
+                </div>
+
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <thead class="tbl-header">
+                        <tr>
+                            <th>First Number</th>
+                            <th>Operator</th>
+                            <th>Second Number</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbl-content"></tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

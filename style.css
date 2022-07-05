@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0px;
+}
+
+.main-body {
+    margin-bottom: 5%;
+    background-color: #1b262c;
+    width: 50%;
+    height: 60vh;
+    box-shadow: 6px 6px 5px 5px #b2b2b2;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-size: 3vmin;
+    transition: 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #1b262c;
+    color: whitesmoke;
+    /* transform: scale(1.025); */
+}
+
+.answer-area {
+    font-size: 4vmin;
+}
+
+.row1 {
+    height: 20%;
+}
+
+.row2,
+.row3,
+.row4,
+.row5 {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+.answer-area {
+    background-color: #1b262c;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 10px;
+    color: whitesmoke;
+    font-size: 6vmin;
+}
+
+.num7,
+.num8,
+.num9,
+.num4,
+.num5,
+.num6,
+.num3,
+.num2,
+.num1,
+.num0,
+.clear,
+.comma,
+.negate,
+.addition,
+.substraction,
+.result {
+    height: 100%;
+    border: 1px solid #1b262c;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+}
+
+.result {
+    flex-basis: 50%;
+}
+
+.negate,
+.addition,
+.substraction,
+.result {
+    background-color: rgb(231, 174, 69);
+    font-weight: bold;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 5px 5px #b2b2b2;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+    overflow-y: scroll;
+    height: 250px;
+}
+
+table {
+    table-layout: fixed;
+}
+
+tbody:nth-of-type(even) {
+    background-color: whitesmoke;
+}
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    background-color: rgb(231, 174, 69);
+    color: white;
+    text-transform: uppercase;
+    font-size: 2vmin;
+    border-right: 1px solid white;
+    text-align: center;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 12px;
+    font-size: 2vmin;
+    text-align: center;
+    font-weight: bold;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.clearHistory-btn {
+    font-size: 16px;
+    transition: 0.2s;
+    width: 20%;
+    height: 30px;
+    background-color: #1b262c;
+    color: white;
+    border-radius: 5px;
+}
+
+.clearHistory-btn:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #1b262c;
+}
+
+/*mobile device*/
+@media only screen and (max-width: 950px) {
+    .main-body {
+        margin: 20% auto;
+        width: 75%;
+        height: 50vh;
+    }
+}
